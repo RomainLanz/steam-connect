@@ -1,0 +1,8 @@
+import Env from '@ioc:Adonis/Core/Env';
+import { steamConfig } from '@rlanz/steam-connect/build/config'
+
+export default steamConfig({
+  realm: Env.get('STEAM_REALM'),
+  callbackUrl: Env.get('STEAM_CALLBACK_URL'),
+  apiKey: Env.get('STEAM_API_KEY'),
+})

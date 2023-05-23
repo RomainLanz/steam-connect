@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "build",
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2020",
+    "types": [
+      "@adonisjs/core"
+    ]
+  },
+  "include": ["./**/*"],
+  "exclude": ["./node_modules", "./build"],
+  "ts-node": {
+    "swc": true
+  }
+}
